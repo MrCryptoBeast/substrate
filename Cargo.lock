@@ -3506,7 +3506,7 @@ dependencies = [
  "multistream-select",
  "parking_lot 0.11.2",
  "pin-project 1.0.10",
- "prost",
+ "prost 0.9.0",
  "prost-build",
  "rand 0.8.4",
  "ring",
@@ -3556,7 +3556,7 @@ dependencies = [
  "libp2p-core",
  "libp2p-swarm",
  "log 0.4.14",
- "prost",
+ "prost 0.9.0",
  "prost-build",
  "rand 0.7.3",
  "smallvec 1.7.0",
@@ -3578,7 +3578,7 @@ dependencies = [
  "libp2p-core",
  "libp2p-swarm",
  "log 0.4.14",
- "prost",
+ "prost 0.9.0",
  "prost-build",
  "rand 0.7.3",
  "regex",
@@ -3599,7 +3599,7 @@ dependencies = [
  "libp2p-swarm",
  "log 0.4.14",
  "lru 0.6.6",
- "prost",
+ "prost 0.9.0",
  "prost-build",
  "smallvec 1.7.0",
  "wasm-timer",
@@ -3620,7 +3620,7 @@ dependencies = [
  "libp2p-core",
  "libp2p-swarm",
  "log 0.4.14",
- "prost",
+ "prost 0.9.0",
  "prost-build",
  "rand 0.7.3",
  "sha2 0.9.8",
@@ -3696,7 +3696,7 @@ dependencies = [
  "lazy_static",
  "libp2p-core",
  "log 0.4.14",
- "prost",
+ "prost 0.9.0",
  "prost-build",
  "rand 0.8.4",
  "sha2 0.9.8",
@@ -3732,7 +3732,7 @@ dependencies = [
  "futures 0.3.16",
  "libp2p-core",
  "log 0.4.14",
- "prost",
+ "prost 0.9.0",
  "prost-build",
  "unsigned-varint 0.7.0",
  "void",
@@ -3766,7 +3766,7 @@ dependencies = [
  "libp2p-swarm",
  "log 0.4.14",
  "pin-project 1.0.10",
- "prost",
+ "prost 0.9.0",
  "prost-build",
  "rand 0.7.3",
  "smallvec 1.7.0",
@@ -3787,7 +3787,7 @@ dependencies = [
  "libp2p-core",
  "libp2p-swarm",
  "log 0.4.14",
- "prost",
+ "prost 0.9.0",
  "prost-build",
  "rand 0.8.4",
  "sha2 0.9.8",
@@ -6919,7 +6919,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "444879275cb4fd84958b1a1d5420d15e6fcf7c235fe47f053c9c2a80aceb6001"
 dependencies = [
  "bytes 1.1.0",
- "prost-derive",
+ "prost-derive 0.9.0",
+]
+
+[[package]]
+name = "prost"
+version = "0.11.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c0b18e655c21ff5ac2084a5ad0611e827b3f92badf79f4910b5a5c58f4d87ff0"
+dependencies = [
+ "bytes 1.1.0",
+ "prost-derive 0.11.2",
 ]
 
 [[package]]
@@ -6935,7 +6945,7 @@ dependencies = [
  "log 0.4.14",
  "multimap",
  "petgraph",
- "prost",
+ "prost 0.9.0",
  "prost-types",
  "regex",
  "tempfile",
@@ -6956,13 +6966,26 @@ dependencies = [
 ]
 
 [[package]]
+name = "prost-derive"
+version = "0.11.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "164ae68b6587001ca506d3bf7f1000bfa248d0e1217b618108fba4ec1d0cc306"
+dependencies = [
+ "anyhow",
+ "itertools",
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "prost-types"
 version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "534b7a0e836e3c482d2693070f982e39e7611da9695d4d1f5a4b186b51faef0a"
 dependencies = [
  "bytes 1.1.0",
- "prost",
+ "prost 0.9.0",
 ]
 
 [[package]]
@@ -7646,7 +7669,7 @@ dependencies = [
  "libp2p",
  "log 0.4.14",
  "parity-scale-codec",
- "prost",
+ "prost 0.11.3",
  "prost-build",
  "quickcheck",
  "rand 0.7.3",
@@ -8297,7 +8320,7 @@ dependencies = [
  "parity-scale-codec",
  "parking_lot 0.11.2",
  "pin-project 1.0.10",
- "prost",
+ "prost 0.11.3",
  "prost-build",
  "quickcheck",
  "rand 0.7.3",
